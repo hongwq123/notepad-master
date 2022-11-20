@@ -4,7 +4,7 @@
 (1)修改NotesList.java中PROJECTION，添加modif字段  
 `NotePad.Notes.COLUMN_NAME_MODIFICATION_DATE `   
 (2)增加dataColumns中装配到ListView的内容  
-NotePad.Notes.COLUMN_NAME_MODIFICATION_DATE}  
+`NotePad.Notes.COLUMN_NAME_MODIFICATION_DATE}  `  
 (3)增加一个textview组件放时间  
 ```
 <TextView  
