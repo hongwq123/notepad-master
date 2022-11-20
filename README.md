@@ -80,7 +80,7 @@
         public static final int YELLOW_COLOR = 1; //yellow  
         public static final int BLUE_COLOR = 2; //blue  
         public static final int GREEN_COLOR = 3; //green  
-        public static final int RED_COLOR = 4; //red  （
+        public static final int RED_COLOR = 4; //red 
         ```
 (5)自定义一个MyCursorAdapter.java继承SimpleCursorAdapter  
 (6)在PROJECTION添加颜色项  
@@ -92,9 +92,9 @@
             NotePad.Notes.COLUMN_NAME_MODIFICATION_DATE, // 2  
             NotePad.Notes.COLUMN_NAME_BACK_COLOR  
     };  
-        ```
+        ```  
 (7)SimpleCursorAdapter改为使用MyCursorAdapte
-        ```
+        ```  
         MyCursorAdapter adapter = new MyCursorAdapter(  
                 this,  
                 R.layout.noteslist_item,  
@@ -102,5 +102,5 @@
                 dataColumns,  
                 viewIDs  
         );  
-        ```
+        ```  
 ![时间戳实现](https://github.com/hongwq123/notepad-master/blob/main/jietu1/1.png)  
