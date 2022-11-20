@@ -1,10 +1,10 @@
-# NotePad  
+# NotePad-master  
 
 1.添加时间戳  
 (1)修改NotesList.java中PROJECTION，添加modif字段  
 `NotePad.Notes.COLUMN_NAME_MODIFICATION_DATE `   
 (2)增加dataColumns中装配到ListView的内容  
-`NotePad.Notes.COLUMN_NAME_MODIFICATION_DATE}  `  
+`NotePad.Notes.COLUMN_NAME_MODIFICATION_DATE  `  
 (3)增加一个textview组件放时间  
 ```
 <TextView  
@@ -128,8 +128,8 @@
         NoteEditor.this.startActivity(intent);
     }
  ```
- (5)新建布局note_color.xml
- (6)添加所需颜色
+ (5)新建布局note_color.xml  
+ (6)添加所需颜色  
  ```
  <?xml version="1.0" encoding="utf-8"?>
 <resources>
