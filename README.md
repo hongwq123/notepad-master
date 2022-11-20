@@ -103,4 +103,43 @@
                 viewIDs  
         );  
 ```  
-![时间戳实现](https://github.com/hongwq123/notepad-master/blob/main/jietu1/1.png)  
+![ui美化](https://github.com/hongwq123/notepad-master/blob/main/jietu1/1.png)  
+4.更改背景  
+(1)添加颜色项
+`NotePad.Notes.COLUMN_NAME_BACK_COLOR`  
+(2)添加一个更改背景的功能选项  
+```
+<item android:id="@+id/menu_color"
+        android:title="@string/menu_color"
+        android:icon="@drawable/ic_menu_edit"
+        android:showAsAction="always"/>
+```
+(3)添加颜色改变的功能  
+```
+        case R.id.menu_color:
+            changeColor();
+            break;
+```
+(4)添加函数改变颜色  
+```
+    private final void changeColor() {
+        Intent intent = new Intent(null,mUri);
+        intent.setClass(NoteEditor.this,NoteColor.class);
+        NoteEditor.this.startActivity(intent);
+    }
+ ```
+ (5)新建布局note_color.xml
+ (6)添加所需颜色
+ ```
+ <?xml version="1.0" encoding="utf-8"?>
+<resources>
+ 
+    <color name="colorWhite">#fff</color>
+    <color name="colorYellow">#FFD885</color>
+    <color name="colorBlue">#A5CAED</color>
+    <color name="colorGreen">#A1D6AE</color>
+    <color name="colorRed">#F49585</color>
+ 
+</resources>
+```
+![改变颜色](https://github.com/hongwq123/notepad-master/blob/main/jietu1/4.png)  
