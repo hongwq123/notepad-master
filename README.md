@@ -17,7 +17,7 @@ NotePad.Notes.COLUMN_NAME_MODIFICATION_DATE}
  SimpleDateFormat sf = new SimpleDateFormat("yy/MM/dd HH:mm");  
         Date d = new Date(now);  
         String format = sf.format(d);  
-![时间戳实现](https://github.com/hongwq123/notepad-master/blob/main/jietu1/3.png—)  
+![时间戳实现](https://github.com/hongwq123/notepad-master/blob/main/jietu1/3.png)  
 2.添加查询功能  
 (1)在AndroidManifest.xml里注册NoteSearch  
 <activity android:name=".NoteSearch" android:label="@string/search_note" />  
@@ -51,7 +51,7 @@ NotePad.Notes.COLUMN_NAME_MODIFICATION_DATE}
           this.startActivity(intent);  
           return true;  
 (5)编写一个查询的java代码notesearch,实现查询功能  
-![查询功能实现](https://github.com/hongwq123/notepad-master/blob/main/jietu1/2.png—)  
+![查询功能实现](https://github.com/hongwq123/notepad-master/blob/main/jietu1/2.png)  
 3.界面UI美化  
 (1)将主题换为白色  
         <activity android:name="NotesList" android:label="@string/title_notes_list"  
@@ -83,4 +83,4 @@ NotePad.Notes.COLUMN_NAME_MODIFICATION_DATE}
                 dataColumns,  
                 viewIDs  
         );  
-![时间戳实现](https://github.com/hongwq123/notepad-master/blob/main/jietu1/1.png—)  
+![时间戳实现](https://github.com/hongwq123/notepad-master/blob/main/jietu1/1.png)  
